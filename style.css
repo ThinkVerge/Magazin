@@ -1,14 +1,121 @@
+/* === Stiluri de bază === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-  font-family: sans-serif;
-  padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #A9A9A9;
+    color: #000;
+    line-height: 1.6;
 }
-.produs {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 10px;
-  width: 200px;
-  display: inline-block;
+
+/* === Navigare === */
+header {
+    background-color: #333;
 }
-.produs img {
-  width: 100%;
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 15px 0;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #FFD700; /* Galben auriu la hover */
+}
+
+/* === Secțiune principală === */
+.home-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.right {
+    flex: 1;
+    text-align: right;
+}
+
+.right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* === Alte secțiuni === */
+section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* === Footer === */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .home-section .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .left, .right {
+        flex: 1;
+        padding: 0;
+        text-align: center;
+    }
+
+    .right {
+        margin-top: 20px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
