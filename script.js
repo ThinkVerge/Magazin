@@ -1,4 +1,3 @@
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
   console.log("Pagina a fost încărcată complet.");
 });
