@@ -2,8 +2,11 @@
   "compilerOptions": {
     "target": "ES6",
     "module": "commonjs",
+    "allowJs": true,
     "checkJs": true,
-    "jsx": "preserve"
+    "outDir": "./dist",
+    "rootDir": "./",
+    "strict": false
   },
   "exclude": [
     "node_modules"
