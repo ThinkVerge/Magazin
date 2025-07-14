@@ -46,6 +46,7 @@ header {
 /* === Secțiune principală === */
 main {
     flex: 1;
+    margin-bottom: 80px; /* Înălțime compensare footer fix */
 }
 
 .home-section .container {
@@ -92,6 +93,9 @@ footer {
     text-align: center;
     padding: 20px 0;
     font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 /* === Responsive Design === */
